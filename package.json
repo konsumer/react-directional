@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Simple directional joystick for react",
   "main": "dist/index.js",
-  "files": ["dist/index.js"],
+  "files": [
+    "dist/index.js"
+  ],
   "scripts": {
     "start": "parcel src/demo.html",
     "build": "parcel build src/index.js"
