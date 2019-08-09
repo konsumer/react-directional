@@ -60,7 +60,7 @@ You can also use standard SVG css-styling, as I did in the [demo](https://github
 
 If you are using [parcel](https://parceljs.org/), I highly recommend using [@svgr/parcel-plugin-svgr](https://www.npmjs.com/package/@svgr/parcel-plugin-svgr) to import the SVG, as it makes it much easier to manage & edit the look, but be aware that it adds prefixes to `classes`, which is my default classes are like this:
 
-```
+```js
 {
   up: 'look_svg__up',
   down: 'look_svg__down',
