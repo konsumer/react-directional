@@ -1,0 +1,21 @@
+{
+  "name": "react-directional",
+  "version": "0.0.0",
+  "description": "Simple directional joystick",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/demo.html"
+  },
+  "keywords": [],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@svgr/parcel-plugin-svgr": "^4.3.2",
+    "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.3",
+    "react-dom": "^16.9.0"
+  }
+}
