@@ -16,6 +16,19 @@ const DirectionalStars = ({ onDirection }) => (
   </Directional>
 )
 
+const DirectionalButtons = ({ onDirection }) => (
+  <Directional className='starsjs' onDirection={onDirection} buttonTag='circle' classes={{ red: 'red', yellow: 'yellow', blue: 'blue', green: 'green' }}>
+    <svg version='1.1' viewBox='0 0 26.458 26.458' xmlns='http://www.w3.org/2000/svg'>
+      <g transform='translate(0 -270.54)' strokeWidth='5.2'>
+        <circle className='red' cx='13.229' cy='274.72' r='3.8506' fill='#f00' />
+        <circle className='yellow' cx='13.229' cy='292.89' r='3.8506' fill='#ff0' />
+        <circle className='blue' cx='4.205' cy='283.77' r='3.8506' fill='#000080' />
+        <circle className='green' cx='21.979' cy='283.77' r='3.8506' fill='#008000' />
+      </g>
+    </svg>
+  </Directional>
+)
+
 const Demo = () => {
   const onDirection = (direction, pressed) => {
     console.log(direction, pressed)
@@ -34,6 +47,15 @@ const Demo = () => {
       <h2>custom</h2>
       <div style={{ width: 200, height: 200 }}>
         <DirectionalStars onDirection={onDirectionStar} />
+      </div>
+      <h2>more complete controller</h2>
+      <div style={{ display: 'flex' }}>
+        <div style={{ width: 150, height: 150 }}>
+          <Directional onDirection={onDirection} />
+        </div>
+        <div style={{ width: 150, height: 150, marginLeft: 100 }}>
+          <DirectionalButtons onDirection={onDirection} />
+        </div>
       </div>
     </div>
   )
