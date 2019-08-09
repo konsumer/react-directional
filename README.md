@@ -55,3 +55,14 @@ export default () => {
 In this case, the buttons are `path` tags and I set the classes.
 
 You can also use standard SVG css-styling, as I did in the [demo](https://github.com/konsumer/react-directional/blob/master/src/index.html)
+
+If you are using [parcel](https://parceljs.org/), I highly recommend using [@svgr/parcel-plugin-svgr](https://www.npmjs.com/package/@svgr/parcel-plugin-svgr) to import the SVG, as it makes it much easier to manage, but be aware that it adds prefixes to `classes`, which is my default classes are like this:
+
+```
+{
+  up: 'look_svg__up',
+  down: 'look_svg__down',
+  left: 'look_svg__left',
+  right: 'look_svg__right'
+}
+```
