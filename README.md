@@ -2,6 +2,8 @@
 
 This is a simple directional controller, using an SVG, for react.
 
+You can see a demo [here](http://konsumer.js.org/react-directional/).
+
 ## usage
 
 ```sh
