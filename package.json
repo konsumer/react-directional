@@ -13,7 +13,7 @@
     "deploy": "gh-pages-deploy",
     "clean-source": "rimraf README.md src package.json package-lock.json"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^16.9.0"
   },
   "devDependencies": {
