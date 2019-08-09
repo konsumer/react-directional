@@ -2,40 +2,26 @@ import React from 'react'
 
 import Look from './look.svg'
 
-export default ({ onDirection }) => {
+export default ({ className = 'joystick', onDirection, children, buttonTag = 'rect', classes = { up: 'look_svg__up', down: 'look_svg__down', left: 'look_svg__left', right: 'look_svg__right' } }) => {
   const onMouseUp = e => {
-    if (e.target.tagName === 'rect') {
-      const c = [...e.target.classList]
-      if (c.indexOf('look_svg__up') !== -1) {
-        onDirection('up', false)
-      }
-      if (c.indexOf('look_svg__down') !== -1) {
-        onDirection('down', false)
-      }
-      if (c.indexOf('look_svg__left') !== -1) {
-        onDirection('left', false)
-      }
-      if (c.indexOf('look_svg__right') !== -1) {
-        onDirection('right', false)
-      }
+    if (e.target.tagName === buttonTag) {
+      const cl = [...e.target.classList]
+      Object.keys(classes).forEach(c => {
+        if (cl.indexOf(classes[c]) !== -1) {
+          onDirection(c, false)
+        }
+      })
     }
   }
   const onMouseDown = e => {
-    if (e.target.tagName === 'rect') {
-      const c = [...e.target.classList]
-      if (c.indexOf('look_svg__up') !== -1) {
-        onDirection('up', true)
-      }
-      if (c.indexOf('look_svg__down') !== -1) {
-        onDirection('down', true)
-      }
-      if (c.indexOf('look_svg__left') !== -1) {
-        onDirection('left', true)
-      }
-      if (c.indexOf('look_svg__right') !== -1) {
-        onDirection('right', true)
-      }
+    if (e.target.tagName === buttonTag) {
+      const cl = [...e.target.classList]
+      Object.keys(classes).forEach(c => {
+        if (cl.indexOf(classes[c]) !== -1) {
+          onDirection(c, true)
+        }
+      })
     }
   }
-  return <div className='joystick'><Look onMouseUp={onMouseUp} onMouseDown={onMouseDown} /></div>
+  return <div className={className} onMouseUp={onMouseUp} onMouseDown={onMouseDown}>{children || <Look />}</div>
 }
