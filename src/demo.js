@@ -20,6 +20,9 @@ const Demo = () => {
   const onDirection = (direction, pressed) => {
     console.log(direction, pressed)
   }
+  const onDirectionStar = (direction, pressed) => {
+    console.log('star', direction, pressed)
+  }
   return (
     <div>
       <h1>react-directional</h1>
@@ -30,7 +33,7 @@ const Demo = () => {
       </div>
       <h2>custom</h2>
       <div style={{ width: 200, height: 200 }}>
-        <DirectionalStars onDirection={onDirection} />
+        <DirectionalStars onDirection={onDirectionStar} />
       </div>
     </div>
   )
