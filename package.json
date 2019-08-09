@@ -39,7 +39,7 @@
     "type": "git",
     "url": "git+https://github.com/konsumer/react-directional.git"
   },
-  "keywords": [],
+  "keywords": ["react", "svg", "interface", "nintendo", "controller"],
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
   "bugs": {
