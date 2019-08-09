@@ -54,4 +54,4 @@ export default () => {
 
 In this case, the buttons are `path` tags and I set the classes.
 
-You can also use standard SVG css-styling, as I did in the [demo](./src/index.html)
+You can also use standard SVG css-styling, as I did in the [demo](https://github.com/konsumer/react-directional/blob/master/src/index.html)
