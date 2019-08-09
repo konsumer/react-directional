@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Look from './look.svg'
+import Look from './look'
 
 export default ({ className = 'joystick', onDirection, children, classes = { up: 'look_svg__up', down: 'look_svg__down', left: 'look_svg__left', right: 'look_svg__right' }, ...props }) => {
   const onMouseUp = e => {
