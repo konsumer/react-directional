@@ -4,6 +4,8 @@ This is a simple directional controller, using an SVG, for react.
 
 You can see a demo [here](http://konsumer.js.org/react-directional/).
 
+Really, this component can be thought of "use an SVG to manage a bunch of buttons", and the fact that it's a little nintendo-style directional-controller is just because that is what I first wanted to use it for.
+
 ## usage
 
 ```sh
@@ -66,5 +68,3 @@ If you are using [parcel](https://parceljs.org/), I highly recommend using [@svg
   right: 'look_svg__right'
 }
 ```
-
-Really, this lib an be thought of "use an SVG to manage a bunch of buttons", and the fact that it's a little nintendo-style directional-controller is just because that is what I first wanted to use it for.
