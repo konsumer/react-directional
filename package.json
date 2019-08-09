@@ -2,9 +2,11 @@
   "name": "react-directional",
   "version": "0.0.0",
   "description": "Simple directional joystick",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": ["dist/index.js"],
   "scripts": {
-    "start": "parcel src/demo.html"
+    "start": "parcel src/demo.html",
+    "build": "parcel build src/index.js"
   },
   "keywords": [],
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
