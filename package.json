@@ -1,7 +1,7 @@
 {
   "name": "react-directional",
   "version": "0.0.0",
-  "description": "Simple directional joystick",
+  "description": "Simple directional joystick for react",
   "main": "dist/index.js",
   "files": ["dist/index.js"],
   "scripts": {
