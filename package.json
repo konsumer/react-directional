@@ -1,6 +1,6 @@
 {
   "name": "react-directional",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Simple directional joystick for react",
   "main": "dist/index.js",
   "files": [
@@ -39,7 +39,13 @@
     "type": "git",
     "url": "git+https://github.com/konsumer/react-directional.git"
   },
-  "keywords": ["react", "svg", "interface", "nintendo", "controller"],
+  "keywords": [
+    "react",
+    "svg",
+    "interface",
+    "nintendo",
+    "controller"
+  ],
   "author": "David Konsumer <konsumer@jetboystudio.com> (http://konsumer.js.org)",
   "license": "MIT",
   "bugs": {
