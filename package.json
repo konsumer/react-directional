@@ -2,6 +2,7 @@
   "name": "react-directional",
   "version": "0.0.12",
   "description": "Simple directional joystick for react",
+  "source": "src/index.js",
   "main": "lib/react-directional.umd.js",
   "module": "lib/react-directional.mjs",
   "files": [
