@@ -1,6 +1,6 @@
 {
   "name": "react-directional",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Simple directional joystick for react",
   "source": "src/index.js",
   "main": "lib/react-directional.umd.js",
